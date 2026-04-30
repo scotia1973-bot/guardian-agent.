@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: guardian-agent
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python guardian.py
+    plan: free
